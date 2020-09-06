@@ -1,0 +1,23 @@
+{
+  "name": "s3-patch",
+  "version": "0.1.0",
+  "description": "Modify large S3 objects without re-transmitting the entire object",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nicwaller/s3-patch.git"
+  },
+  "keywords": [
+    "aws",
+    "s3"
+  ],
+  "author": "Nic Waller",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicwaller/s3-patch/issues"
+  },
+  "homepage": "https://github.com/nicwaller/s3-patch#readme"
+}
