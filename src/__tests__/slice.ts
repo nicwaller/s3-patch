@@ -74,6 +74,18 @@ describe('positive offsets', () => {
         expect(slice(haystack, concrete)).toEqual(needle);
     });
 
+    test('gets empty suffix', () => {
+        const haystack = 'hello-world';
+        const needle = '';
+        const selector: Slice = {start: haystack.length};
+        const concrete: ConcreteSlice = slicer(haystack.length)(selector);
+        expect(concrete).toEqual({
+            start: 11,
+            end: 11,
+        })
+        expect(slice(haystack, concrete)).toEqual(needle);
+    });
+
     test('gets first character', () => {
         const haystack = 'hello-world';
         const needle = 'h';

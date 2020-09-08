@@ -1,15 +1,19 @@
 // I like Python's idea of string slicing. Let's do more of that.
 // https://docs.python.org/3/tutorial/introduction.html#strings
 
-export interface Slice {
+// allows referencing end of object using negative or undefined offset
+export interface AbstractSlice {
     start?: number; // inclusive
     end?: number; // exclusive
 }
 
+// concrete offsets are always non-negative integers
 export interface ConcreteSlice {
     start: number; // inclusive
     end: number; // exclusive
 }
+
+export type Slice = AbstractSlice | ConcreteSlice;
 
 export type SliceResolver = (slice: Slice) => ConcreteSlice;
 

@@ -25,6 +25,9 @@
     "aws",
     "s3"
   ],
+  "dependencies": {
+    "aws-sdk": "^2.747.0"
+  },
   "devDependencies": {
     "@types/jest": "^26.0.13",
     "jest": "^26.4.2",
